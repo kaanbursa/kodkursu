@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+.row {
+	height: 700px;
+	width: 100%;
+	background-color: #F1E9DB;
+
+}
+
+.row#first {
+	background-image: url("assets/mainbackground.jpg");
+	background-size: cover;
+}
+
+.row#second {
+	background-color: #8DA9C4;
+}
+
+.row#third {
+	background-color: #EEF4ED;
+}
+
+.row#fourth {
+	background-color: #A39B8B;
+}
+
+.errorMessage{
+	background-color: #F21B3F;
+	text-align: center;
+	left: 50%;
+	color: white;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 5px;
+	font-family: 'Raleway', sans-serif;
+	padding-top: 20px;
+
+}
+
+.successMessage{
+	background-color: #3DDC97;
+	text-align: center;
+	left: 50%;
+	color: white;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 5px;
+	font-family: 'Raleway', sans-serif;
+	padding-top: 20px;
+
+}
+
+/* sign up login design */
+.signUp{
+	width: 100%;
+	text-align: center;
+	color: white !important;
+	background-color: #C2F9BB;
+}
+
+.signUp:hover{
+	background-color:  #3DDC97;
+}
+
+
+
+/* navbar */
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
