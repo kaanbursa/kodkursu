@@ -1,4 +1,12 @@
 a {
 	text-decoration: none;
-	color: white;
+	color: #5E807F;
+}
+
+.mdl-navigation__link{
+	color: #5E807F;
+}
+
+.mdl-layout__header {
+	background-color: white;
 }

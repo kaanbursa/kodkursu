@@ -3,13 +3,14 @@ const mongoose = require('mongoose'),
 		config = require('../config/database');
 
 // User Schema
-const  UserSchema = mongoose.Schema({
+const  UserSchema = mongoose.Schema ({
 	name: {
 		type: String
 	},
 	email: {
 		type: String,
-		required: true
+		required: true,
+		lowercase: true
 	},
 	username: {
 		type: String,
