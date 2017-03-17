@@ -3,10 +3,13 @@ const mongoose = require('mongoose'),
       config = require('../config/database');
 
 const CourseSchema = mongoose.Schema({
-    name: {
+    title: {
       type: String,
       required: true
     },
+    image: {
+       data: Buffer, contentType: String
+     },
     price: {
       type: Number,
       required: true
@@ -14,7 +17,17 @@ const CourseSchema = mongoose.Schema({
     isViewed: {
       type: Number
     },
-    category: Category.CategorySchema,
+    category: String
 })
 
 const Course = module.exports = mongoose.model('Course', CourseSchema);
+
+
+module.exports.getCourses = function(callback){
+  Course.find({}, callback);
+}
+
+module.exports.getCourseByName = function(name, callback){
+  var query = {name: name}
+  Course.findOne(query, callback);
+}

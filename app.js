@@ -10,6 +10,7 @@ const config = require('./config/database')
 
 // const index = require('./routes/index');
 const users = require('./routes/users');
+const courses = require('./routes/courses')
 
 // connect to database
 mongoose.connect(config.database);
@@ -62,6 +63,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/users', users);
+app.use('/courses', courses);
 
 
 

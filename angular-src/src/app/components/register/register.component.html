@@ -4,26 +4,26 @@
 
 		<div class="mdl-card mdl-shadow--6dp">
 	  	<div class="mdl-card__supporting-text">
-				<form (submit)="onRegisterSubmit()">
+				<form  (submit)="onRegisterSubmit()">
 				<flash-messages></flash-messages>
 					<div class="mdl-textfield mdl-js-textfield">
-						<input class="mdl-textfield__input" type="text" [(ngModel)]= "name" name="name" />
-						<label class="mdl-textfield__label" for="username">Name</label>
+						<input placeholder="Name" class="mdl-textfield__input" type="text" [(ngModel)]= "name" name="name" />
+						<!-- <label class="mdl-textfield__label" for="username">Name</label> -->
 					</div>
 
 					<div class="mdl-textfield mdl-js-textfield">
-						<input class="mdl-textfield__input" type="text" [(ngModel)]= "username" name="username"/>
-						<label class="mdl-textfield__label" for="username">Username</label>
+						<input placeholder="Username" class="mdl-textfield__input" type="text" [(ngModel)]= "username" name="username"/>
+						<!-- <label class="mdl-textfield__label" for="username">Username</label> -->
 					</div>
 
 					<div class="mdl-textfield mdl-js-textfield">
-						<input class="mdl-textfield__input" type="text" [(ngModel)]= "email" name="email" />
-						<label class="mdl-textfield__label" for="useremail">Email</label>
+						<input placeholder="Email" autocomplete="off" class="mdl-textfield__input" type="text" [(ngModel)]= "email" name="email" />
+						<!-- <label class="mdl-textfield__label" for="useremail">Email</label> -->
 					</div>
 
 					<div class="mdl-textfield mdl-js-textfield">
-						<input class="mdl-textfield__input" type="password" [(ngModel)]= "password" name="password"/>
-						<label class="mdl-textfield__label" for="userpass">Password</label>
+						<input placeholder="Password" autocomplete="off" class="mdl-textfield__input" type="password" [(ngModel)]= "password" name="password"/>
+						<!-- <label class="mdl-textfield__label" for="userpass">Password</label> -->
 					</div>
 					<div class="mdl-card__actions ">
 				<button type="submit" value="Submit" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect signUp">Sign Up</button>

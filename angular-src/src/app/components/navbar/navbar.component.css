@@ -9,4 +9,5 @@ a {
 
 .mdl-layout__header {
 	background-color: white;
+	box-shadow: none;
 }
