@@ -12,17 +12,22 @@ import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SyllabusComponent } from './components/syllabus/syllabus.component'
 
 import { ValidateService } from './services/validate.service';
 import { AuthService } from './services/auth.service';
+import { CourseService } from './services/course.service';
 import { FlashMessagesModule } from 'angular2-flash-messages';
+import { AuthGuard } from './guards/auth.guard';
+
 
 const appRoutes: Routes = [
   {path:'', component: HomeComponent},
   {path:'register', component: RegisterComponent},
   {path:'login', component: LoginComponent},
-  {path:'dashboard', component: DashboardComponent},
-  {path:'profile', component: ProfileComponent}
+  {path: 'syllabus/:id', component: SyllabusComponent},
+  {path:'dashboard', component: DashboardComponent, canActivate:[AuthGuard]},
+  {path:'profile', component: ProfileComponent, canActivate:[AuthGuard]}
 
 ];
 
@@ -35,7 +40,8 @@ const appRoutes: Routes = [
     HomeComponent,
     DashboardComponent,
     ProfileComponent,
-    FooterComponent
+    FooterComponent,
+    SyllabusComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +50,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     FlashMessagesModule
   ],
-  providers: [ValidateService, AuthService],
+  providers: [ValidateService, AuthService, AuthGuard, CourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

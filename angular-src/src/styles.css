@@ -7,7 +7,7 @@
 
 .row#first {
 	background-size: cover;
-	height: 433px;
+	height: 418px;
 }
 
 .row#second {
@@ -34,6 +34,10 @@
 	font-family: 'Raleway', sans-serif;
 	padding-top: 20px;
 
+}
+
+.demo-card-square{
+	height: 400px;
 }
 
 .successMessage{
@@ -160,18 +164,44 @@
 .homeSignUp{
 	font-size: 20px;
 	margin-top: 70px;
-	height: 80px;
+	height: 50px;
 	width: 30%;
 	text-align: center;
 	left: 35%;
 	color: white !important;
-	background-color: #5E807F;
+	background-color: #24272B;
 	border-radius: 8px;
 	font-family: 'Roboto', sans-serif;
 }
 
 .homeSignUp:hover{
 	background-color: #8EB897;
+}
+
+/* Profile css */
+
+.userName{
+	text-align: left;
+	padding-left: 10px;
+	vertical-align: middle;
+	color: #5E807F;
+	padding-top: 80px;
+	font-size: 40px;
+	font-family: 'Dosis', sans-serif;
+}
+
+#dashboardHeader{
+	margin-bottom: 30px;
+	font-size: 40px;
+}
+
+.profilePic{
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	float: right;
+	padding-top: 60px;
+	margin-left: 10px;
 }
 
 

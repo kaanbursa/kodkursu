@@ -1,5 +1,5 @@
 <div id="first" class= "row">
-	<p class="rowHeader"> Abra Kadabra. </p>
+	<p class="rowHeader"> Become a Hacker. </p>
 	<p class="rowWriting"> Learn how to code and analyse data </p>
 	<button type="submit" value="Submit"
 	class="mdl-button mdl-button--colored homeSignUp" [routerLink] = "['/register']">Sign Up</button>
@@ -33,9 +33,9 @@
 					    {{course.description}}
 					  </div>
 					  <div class="mdl-card__actions mdl-card--border">
-					    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+					    <button type="button" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"  (click)="onSubmit(course)">
 					      View Syllabus
-					    </a>
+					    </button>
 					  </div>
 				 </div>
 			 </div>

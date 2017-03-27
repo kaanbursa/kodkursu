@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
+import { CourseService } from '../../services/course.service';
+
+
 
 @Component({
   selector: 'app-home',
@@ -11,14 +14,14 @@ export class HomeComponent implements OnInit {
 
   course: Object;
   constructor(private router: Router,
-              private authService: AuthService
+              private authService: AuthService,
+              private courseService: CourseService
               ) { }
 
   ngOnInit() {
-    this.authService.getCourses().subscribe(catalog => {
-      console.log( 'Catalog 0 is ',catalog[0].title);
+    this.courseService.getCourses().subscribe(catalog => {
       var courses = []
-      for(let i = 0; i < 2; i++){
+      for(let i = 0; i < 3; i++){
         courses.push(catalog[i])
     }
     this.course = courses
@@ -28,6 +31,15 @@ export class HomeComponent implements OnInit {
       console.log(err);
       return false;
     })
+  }
+
+  onSubmit(course: any){
+    this.courseService.findCourse(course).subscribe(course => {
+      console.log(course)
+      this.router.navigate(['/syllabus', course._id]);
+    })
+
+
   }
 
 }

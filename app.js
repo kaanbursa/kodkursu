@@ -34,10 +34,7 @@ const port = 3000;
 // CORS Middleware
 app.use(cors());
 
-// Route to index page
-app.get('/', (req, res) => {
-	res.send('Invalid endpoint');
-});
+
 
 // view engine setup
 //app.set('views', path.join(__dirname, 'views'));
@@ -46,6 +43,9 @@ app.get('/', (req, res) => {
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 //app.use(logger('dev'));
+
+// Set Static Folder
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Bodyparser middleware
 app.use(bodyParser.json());
@@ -58,15 +58,21 @@ app.use(passport.session());
 
 require('./config/passport')(passport);
 
-// Set Static Folder
-app.use(express.static(path.join(__dirname, 'public')));
+
 
 
 app.use('/users', users);
 app.use('/courses', courses);
 
 
+// Route to index page
+app.get('/', (req, res) => {
+	res.send('Invalid endpoint');
+});
 
+app.get('*', (req, res)=>{
+	res.sendFile(path.join(__dirname, + 'public/index.html'))
+})
 
 app.listen(port, () =>{
 	console.log('server started on '+ port)
