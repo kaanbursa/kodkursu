@@ -13,6 +13,7 @@ export class SyllabusComponent implements OnInit {
   id: number;
   private sub: any;
   course: Object;
+  syllabus: Object;
 
   constructor(private route: ActivatedRoute,
               private router: Router,
@@ -23,14 +24,17 @@ export class SyllabusComponent implements OnInit {
 
 
   this.sub = this.route.params.subscribe(params => {
-       this.id = params['id']; // (+) converts string 'id' to a number
+       this.id = params['id'];
        console.log(this.id)
 
        // In a real app: dispatch action to load the details here.
        this.courseService.getSyllabus(this.id)
        .subscribe((syllabus) => {
 
-         this.course = syllabus});
+         this.course = syllabus
+         this.syllabus = syllabus.syllabus
+         console.log(syllabus.syllabus)
+     });
     });
 
   }

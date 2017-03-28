@@ -204,6 +204,43 @@
 	margin-left: 10px;
 }
 
+/*.coverImage {
+	height: 550px;
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 80px;
+	opacity: 0.3;
+  filter: alpha(opacity=50);
+	border-radius: 5px;
+	-webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: -10px 10px 5px -10px rgba(0,0,0,0.75);
+	z-index: -1 !important;
+
+
+}*/
+
+
+.demo-card-wide{
+	width: 50%;
+	height: 200px;
+	margin-left: 100px;
+	margin-top: 50px;
+}
+
+#courseDesc{
+	margin-top: -700px;
+	z-index: 9999 !important;
+}
+
+#syllabusImage{
+	height: 400px;
+}
+
+#syllabusRow{
+	height: auto;
+}
+
 
 
 

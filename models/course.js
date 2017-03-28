@@ -37,10 +37,13 @@ const Course = module.exports = mongoose.model('Course', CourseSchema);
 
 // var python = new Course({ title : 'Python',
 //           description : 'Learn python and its vast modules',
-//           syllabus : { week1 :  'learn python syntax',
-//                 week2: 'Its all about functions',
-//                 week3: 'Python Classes',
-//                 week4 : 'Python and Data'}} );
+//           syllabus : [
+//                 {week1 :  'learn python syntax'},
+//                 {week2: 'Its all about functions'},
+//                 {week3: 'Python Classes'},
+//                 {week4 : 'Python and Data'}
+//                ]
+//  });
 //
 // python.save(function (err) {
 //   if (err) return (err)});
