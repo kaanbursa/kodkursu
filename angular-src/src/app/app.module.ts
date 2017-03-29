@@ -19,6 +19,7 @@ import { AuthService } from './services/auth.service';
 import { CourseService } from './services/course.service';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { AuthGuard } from './guards/auth.guard';
+import { ValuesPipe } from './pipe.module'
 
 
 const appRoutes: Routes = [
@@ -41,7 +42,8 @@ const appRoutes: Routes = [
     DashboardComponent,
     ProfileComponent,
     FooterComponent,
-    SyllabusComponent
+    SyllabusComponent,
+    ValuesPipe
   ],
   imports: [
     BrowserModule,
