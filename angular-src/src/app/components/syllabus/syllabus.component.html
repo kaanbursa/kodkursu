@@ -1,16 +1,16 @@
 <div *ngIf="course">
-  <div class="row" >
-      <div id="first" class= "row">
+
+      <div id="sixt" class= "row">
         <p class="rowHeader"> {{course.title.toUpperCase()}} </p>
         <p class="rowWriting"> {{course.description}} </p>
         <button type="submit" value="Submit"
-        class="mdl-button mdl-button--colored homeSignUp" [routerLink] = "['/home']">Get Started</button>
+        class="mdl-button mdl-button--colored homeSignUp" (click)="onSubmit(course)">Get Started</button>
       </div>
-  </div>
-  <div class="row" *ngIf="course">
-      <div id="second" class= "row">
-        <h1 class="lowerHeader"> Why learn {{course.title}} </h1>
-        <p class="rowWriting"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+  <div *ngIf="course">
+      <div id="fifth" >
+        <h1 class="lowerHeader"> Why become {{course.title}} </h1>
+        <p class="syllabusDesc"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
            It has survived not only five centuries, but also the leap into electronic typesetting,
@@ -32,15 +32,15 @@
           </div>
   </div>
 </div>
+<hr style="margin: 20px 15px">
 <div id="fourth" class="row">
-
 		<div class="mdl-cell mdl-cell--8-col getStarted">
 			<div class="mdl-grid getStartedWriting">
 				<div class="mdl-cell mdl-cell--6-col">
 					<p class="pContent">Get started with your coding career   <i class="material-icons">thumb_up</i></p>
 				</div>
 				<div class="mdl-cell mdl-cell--6-col">
-					<button class="mdl-button mdl-js-button mdl-button--raised pButton" [routerLink] = "['/login']">Get Started</button>
+					<button class="mdl-button mdl-js-button mdl-button--raised pButton" (click)="onSubmit(course)">Get Started</button>
 				</div>
 		 </div>
 		</div>

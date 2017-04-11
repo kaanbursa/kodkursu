@@ -18,9 +18,9 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     this.courseService.getCourses().subscribe(catalog => {
-      console.log( 'Catalog 0 is ',catalog[0].title);
+
       var courses = []
-      for(let i = 0; i < 3; i++){
+      for(let i = 0; i < catalog.length; i++){
         courses.push(catalog[i])
     }
     this.course = courses
@@ -30,6 +30,15 @@ export class DashboardComponent implements OnInit {
       console.log(err);
       return false;
     })
+  }
+
+  onSubmit(course: any){
+    this.courseService.findCourse(course).subscribe(course => {
+      console.log(course)
+      this.router.navigate(['/syllabus', course._id]);
+    })
+
+
   }
 
     }

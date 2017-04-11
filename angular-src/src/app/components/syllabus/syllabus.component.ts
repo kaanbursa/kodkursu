@@ -1,6 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
-import { AuthService } from '../../services/auth.service';
 import { CourseService } from '../../services/course.service';
 
 
@@ -37,6 +36,12 @@ export class SyllabusComponent implements OnInit {
      });
     });
 
+  }
+  onSubmit(course: any){
+    this.courseService.findCourse(course).subscribe(course => {
+      console.log(course)
+      this.router.navigate(['/course', course._id]);
+    })
   }
 
   ngOnDestroy() {

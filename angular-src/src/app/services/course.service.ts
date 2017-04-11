@@ -33,5 +33,9 @@ export class CourseService {
       .map(res => res.json());
   }
 
+  inCourse(){
+    return false;
+  }
+
 
 }
