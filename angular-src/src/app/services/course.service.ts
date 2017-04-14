@@ -19,12 +19,7 @@ export class CourseService {
 			.map(res => res.json());
 	}
 
-  findCourse(course: any){
-    let headers = new Headers();
-		headers.append('Content-Type', 'application/json')
-    return this.http.post('http://localhost:3000/courses/syllabus/' + course._id, {headers: headers})
-      .map(res => res.json());
-  }
+  
 
   getSyllabus(id){
     let headers = new Headers();
@@ -33,9 +28,7 @@ export class CourseService {
       .map(res => res.json());
   }
 
-  inCourse(){
-    return false;
-  }
+
 
 
 }

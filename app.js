@@ -11,6 +11,7 @@ const config = require('./config/database')
 // const index = require('./routes/index');
 const users = require('./routes/users');
 const courses = require('./routes/courses')
+const contents = require('./routes/contents')
 
 // connect to database
 mongoose.connect(config.database);
@@ -63,6 +64,7 @@ require('./config/passport')(passport);
 
 app.use('/users', users);
 app.use('/courses', courses);
+app.use('/contents', contents);
 
 
 // Route to index page

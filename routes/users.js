@@ -67,8 +67,25 @@ router.post('/authenticate', (req, res, next) => {
 
 // Profile
 router.get('/profile', passport.authenticate('jwt', {session: false}), (req, res, next) => {
-  res.json({user: req.user});
+  User.getUserByUsername(req.user.username, (err, user) => {
+    if(err) throw err;
+      res.json({user: req.user,
+            course: user.courses
+      });
+  })
+
 });
+
+// Attend a course
+router.post('/attend/:id', (req, res, next) => {
+  const courseId = req.params.id
+  User.attendCourse(req.body.id, courseId, (err, user) => {
+    if(err) throw err;
+
+    res.json({success: true, msg:"Succesfly signed in"})
+
+  })
+})
 
 
 

@@ -1,5 +1,7 @@
 const mongoose = require('mongoose'),
       Content = require('./content'),
+      User = require('./content'),
+      fs = require('fs'),
       config = require('../config/database');
 
 const CourseSchema = mongoose.Schema({
@@ -27,12 +29,22 @@ const CourseSchema = mongoose.Schema({
     content: {
       type: String,
       ref: 'Content'
+    },
+    student: {
+      type: Number,
+      ref: 'User'
     }
 })
 
+
 const Course = module.exports = mongoose.model('Course', CourseSchema);
 
-// Initial datas
+// image for courses
+// const sql = './assets/sql.png';
+// const web = './assets/makeaWebsite@2x.png';
+// const js = './assets/javascript@2x.png';
+// const ruby = './assets/ruby@2x.png';
+// //Initial datas
 // var webdeveloper = new Course({ title : 'Full-Stack Web Developer',
 //           description : 'Become a web developer, manage backend and create beautiful UI for your web',
 //           syllabus : [
@@ -43,6 +55,9 @@ const Course = module.exports = mongoose.model('Course', CourseSchema);
 //                 {Javascript: 'Time to make the website interactive with some scripting language.'}
 //                ]
 //  });
+// webdeveloper.image.data = fs.readFileSync(web);
+//  webdeveloper.image.contentType = 'image/png';
+//
 //  var dataanalyst = new Course({ title : 'Data-Analyst',
 //            description : 'One of the best jobs in the 21st century. Learn why stuff happens and predict the future!.',
 //            syllabus : [
@@ -52,6 +67,9 @@ const Course = module.exports = mongoose.model('Course', CourseSchema);
 //                  {'Image-Recognition': 'Time to create a software that recognizes people by feeding the software with images!'}
 //                 ]
 //   });
+//
+// dataanalyst.image.data = fs.readFileSync(sql);
+//  dataanalyst.image.contentType = 'image/png';
 //
 //   var uiux = new Course({ title : 'UI/UX Designer',
 //             description : 'Understand human behavior and your customer and make the web site usable by anyone',
@@ -63,6 +81,9 @@ const Course = module.exports = mongoose.model('Course', CourseSchema);
 //                  ]
 //    });
 //
+// uiux.image.data = fs.readFileSync(ruby);
+//  uiux.image.contentType = 'image/png';
+//
 //    var android = new Course({ title : 'Android Developer',
 //              description : 'Get familiar with Android development and create smartphone apps!',
 //              syllabus : [
@@ -72,6 +93,9 @@ const Course = module.exports = mongoose.model('Course', CourseSchema);
 //                    {Design: 'Create some very cool websites with the power of SASS'}
 //                   ]
 //     });
+//
+// android.image.data = fs.readFileSync(js);
+//  android.image.contentType = 'image/png';
 //
 // webdeveloper.save(function (err) {
 //   if (err) return (err)});

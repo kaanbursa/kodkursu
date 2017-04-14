@@ -12,7 +12,6 @@ export class DashboardComponent implements OnInit {
   course: Object;
 
   constructor(private router: Router,
-              private authService: AuthService,
               private courseService: CourseService
   ) { }
 
@@ -33,11 +32,7 @@ export class DashboardComponent implements OnInit {
   }
 
   onSubmit(course: any){
-    this.courseService.findCourse(course).subscribe(course => {
-      console.log(course)
       this.router.navigate(['/syllabus', course._id]);
-    })
-
 
   }
 

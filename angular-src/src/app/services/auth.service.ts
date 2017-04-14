@@ -49,6 +49,14 @@ export class AuthService {
 		this.authToken = token;
 	}
 
+	startCourse(course: any){
+		const body = localStorage.getItem('user')
+    let headers = new Headers();
+		headers.append('Content-Type', 'application/json')
+    return this.http.post('http://localhost:3000/users/attend/' + course._id, body, {headers: headers})
+      .map(res => res.json());
+  }
+
 
 	loggedIn(){
 		return tokenNotExpired();

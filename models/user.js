@@ -21,10 +21,10 @@ const  UserSchema = mongoose.Schema ({
 		type: String,
 		required: true
 	},
-	courses: {
-		type: Array,
+	courses: [{
+		type: mongoose.Schema.ObjectId,
 		ref: 'Course'
-	}
+	}]
 
 });
 
@@ -37,7 +37,9 @@ module.exports.getUserById = function(id, callback){
 
 module.exports.getUserByUsername = function(username, callback){
 	const query = {username: username}
-	User.findOne(query, callback);
+	User.findOne(query)
+	.populate('courses')
+	.exec(callback);
 }
 
 
@@ -49,6 +51,11 @@ module.exports.addUser = function(newUser, callback){
 			newUser.save(callback);
 		});
 	});
+}
+
+module.exports.attendCourse = function(userId, newCourse, callback){
+	User.update({_id: userId },
+			 {$push: { 'courses' : newCourse }} , {upsert:true, new: true, setDefaultsOnInsert: true}, callback);
 }
 
 module.exports.comparePassword = function(candidatePassword, hash, callback) {

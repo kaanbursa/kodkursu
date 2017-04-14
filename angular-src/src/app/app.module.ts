@@ -12,8 +12,12 @@ import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { SyllabusComponent } from './components/syllabus/syllabus.component'
-import { CourseComponent } from './components/course/course.component'
+import { SyllabusComponent } from './components/syllabus/syllabus.component';
+import { CourseComponent } from './components/course/course.component';
+
+
+import { AceEditorComponent } from 'ng2-ace-editor';
+
 
 import { ValidateService } from './services/validate.service';
 import { AuthService } from './services/auth.service';
@@ -21,8 +25,10 @@ import { CourseService } from './services/course.service';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { AuthGuard } from './guards/auth.guard';
 import { ValuesPipe } from './tools/pipe.module';
+import { COURSE_ROUTES } from './tools/course.routes';
 
-import {CodemirrorModule} from 'ng2-codemirror'
+
+
 
 
 
@@ -49,15 +55,15 @@ const appRoutes: Routes = [
     FooterComponent,
     SyllabusComponent,
     ValuesPipe,
-    CourseComponent
+    CourseComponent,
+    AceEditorComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes),
-    FlashMessagesModule,
-    CodemirrorModule
+    FlashMessagesModule
   ],
   providers: [ValidateService, AuthService, AuthGuard, CourseService],
   bootstrap: [AppComponent]

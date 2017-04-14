@@ -8,8 +8,7 @@
       "root": "src",
       "outDir": "../public",
       "assets": [
-        "assets",
-        "favicon.ico"
+        "assets"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -18,11 +17,13 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.css",
-        "../node_modules/codemirror/lib/codemirror.css",
-        "../node_modules/codemirror/theme/material.css"
+        "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/ace-builds/src-min/ace.js",
+        "../node_modules/ace-builds/src-min/mode-json.js",
+        "../node_modules/ace-builds/src-min/worker-json.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
@@ -30,11 +31,6 @@
       }
     }
   ],
-  "addons": [
-    "../node_modules/codemirror/mode/xml/xml.js",
-    "../node_modules/codemirror/mode/javascript/javascript.js",
-    "../node_modules/codemirror/mode/htmlmixed/htmlmixed.js"
-],
 
   "e2e": {
     "protractor": {

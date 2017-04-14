@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { CourseService } from '../../services/course.service';
+import { AuthService } from '../../services/auth.service';
 
 
 @Component({
@@ -16,6 +17,7 @@ export class SyllabusComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,
               private router: Router,
+              private authService: AuthService,
               private courseService: CourseService
               ) { }
 
@@ -38,10 +40,18 @@ export class SyllabusComponent implements OnInit {
 
   }
   onSubmit(course: any){
-    this.courseService.findCourse(course).subscribe(course => {
-      console.log(course)
-      this.router.navigate(['/course', course._id]);
-    })
+    if (this.authService.loggedIn() === false){
+      this.router.navigate(['/login']);
+    } else {
+      this.authService.startCourse(course).subscribe(data => {
+        console.log(course + "ola mamasita")
+        if(data.success){
+          this.router.navigate(['/course', course._id]);
+        } else {
+          this.router.navigate(['/syllabus']);
+        }
+      })
+    }
   }
 
   ngOnDestroy() {

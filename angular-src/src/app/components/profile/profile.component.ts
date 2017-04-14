@@ -10,12 +10,22 @@ import { Router } from '@angular/router';
 })
 export class ProfileComponent implements OnInit {
   user: Object;
+  course: Object;
+
   constructor(private authService: AuthService,
     private router: Router) { }
 
   ngOnInit() {
     this.authService.getProfile().subscribe(profile => {
+      console.log(profile.course)
       this.user = profile.user;
+      var courses = []
+      for(let i = 0; i < profile.course.length; i++){
+        courses.push(profile.course[i])
+    }
+    this.course = courses;
+
+
     },
     err => {
       console.log(err);
