@@ -89,9 +89,6 @@ export class LessonComponent implements OnInit {
     this.router.navigate(['../', (+this.id + 1)], {relativeTo: this.route})
   }
 
-  userFunc(){
-    
-  }
 
   ngOnDestroy() {
     this.sub.unsubs

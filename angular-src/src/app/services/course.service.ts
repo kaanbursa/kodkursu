@@ -16,7 +16,7 @@ export class CourseService {
   getCourses(){
 		let headers = new Headers();
 		headers.append('Content-Type', 'application/json')
-		return this.http.get('http://localhost:3000/courses/catalog', {headers: headers})
+		return this.http.get('courses/catalog', {headers: headers})
 			.map(res => res.json());
 	}
 
@@ -25,7 +25,7 @@ export class CourseService {
   getSyllabus(id){
     let headers = new Headers();
 		headers.append('Content-Type', 'application/json')
-    return this.http.get('http://localhost:3000/courses/syllabus/' + id, {headers: headers})
+    return this.http.get('courses/syllabus/' + id, {headers: headers})
       .map(res => res.json());
   }
 
