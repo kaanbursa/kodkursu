@@ -1,0 +1,28 @@
+<div class="mdl-grid">
+
+    <div class="mdl-cell mdl-cell--4-col courseContent" *ngIf="course" >
+      <h3 class="contentDesc">{{description}}</h3>
+      <hr>
+      <p class="rowWriting">{{assignment}}<p>
+        <div class="mdl-grid">
+        <button class="mdl-cell mdl-cell--6-col submitBtn" (click)="submit()">
+            Submit
+        </button>
+        <button class="mdl-cell mdl-cell--6-col submitBtn" [disabled]="buttonState" (click)="next()">
+            Next
+        </button>
+      </div>
+
+    </div>
+    <div class="mdl-cell mdl-cell--4-col">
+       <ace-editor
+       [(text)]="text" #editor style="height:600px;"></ace-editor>
+    </div>
+    <div class="mdl-cell mdl-cell--4-col terminal">
+    <h3 class="contentDesc">Output</h3>
+    <hr>
+    <p class="rowWriting">Heelo World<p>
+      <hr>
+      <flash-messages></flash-messages>
+    </div>
+ </div>
