@@ -13,7 +13,6 @@ router.get('/catalog', (req, res, next) => {
 })
 
 
-
 router.get('/syllabus/:id', (req, res, next) => {
   Course.getCourseById(req.params.id, (err,course) => {
     if (err) throw err;

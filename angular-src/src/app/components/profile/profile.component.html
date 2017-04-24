@@ -1,4 +1,4 @@
-<div class="row" *ngIf="user">
+<div  class="profileRow" *ngIf="user">
   <div class="mdl-grid">
     <div class="mdl-cell mdl-cell--2-col">
       <img class="profilePic" src="http://s3.amazonaws.com/37assets/svn/765-default-avatar.png">
@@ -13,6 +13,7 @@
 
   </div>
   <hr>
+  <h3 class="contentDesc">My Courses</h3>
   <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--3-col" *ngFor="let course of course" (click)="onSelect(course)">
         <div class="demo-card-square mdl-card mdl-shadow--2dp">

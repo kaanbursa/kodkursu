@@ -14,21 +14,18 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SyllabusComponent } from './components/syllabus/syllabus.component';
 import { CourseComponent } from './components/course/course.component';
-
+import { LessonComponent } from './components/lesson/lesson.component';
 
 import { AceEditorComponent } from 'ng2-ace-editor';
-
 
 import { ValidateService } from './services/validate.service';
 import { AuthService } from './services/auth.service';
 import { CourseService } from './services/course.service';
+import { ContentService } from './services/content.service';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { AuthGuard } from './guards/auth.guard';
 import { ValuesPipe } from './tools/pipe.module';
 import { COURSE_ROUTES } from './tools/course.routes';
-
-
-
 
 
 
@@ -39,7 +36,9 @@ const appRoutes: Routes = [
   {path: 'syllabus/:id', component: SyllabusComponent},
   {path:'dashboard', component: DashboardComponent, canActivate:[AuthGuard]},
   {path:'profile', component: ProfileComponent, canActivate:[AuthGuard]},
-  {path:'course/:id', component: CourseComponent, canActivate:[AuthGuard]}
+  {path:'course/:id', component: CourseComponent, canActivate:[AuthGuard], children: [
+    {path:'lesson/:id', component: LessonComponent}
+  ]}
 
 ];
 
@@ -56,7 +55,8 @@ const appRoutes: Routes = [
     SyllabusComponent,
     ValuesPipe,
     CourseComponent,
-    AceEditorComponent
+    AceEditorComponent,
+    LessonComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +65,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     FlashMessagesModule
   ],
-  providers: [ValidateService, AuthService, AuthGuard, CourseService],
+  providers: [ValidateService, AuthService, AuthGuard, CourseService, ContentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

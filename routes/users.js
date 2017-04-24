@@ -55,7 +55,6 @@ router.post('/authenticate', (req, res, next) => {
   					name: user.name,
   					username: user.username,
   					email: user.email
-
   				}
   			})
   		} else {
@@ -67,7 +66,8 @@ router.post('/authenticate', (req, res, next) => {
 
 // Profile
 router.get('/profile', passport.authenticate('jwt', {session: false}), (req, res, next) => {
-  User.getUserByUsername(req.user.username, (err, user) => {
+  // res.json({user: req.user});
+  User.getUserById(req.user.id, (err, user) => {
     if(err) throw err;
       res.json({user: req.user,
             course: user.courses

@@ -8,6 +8,7 @@ import { tokenNotExpired } from 'angular2-jwt';
 @Injectable()
 export class CourseService {
   course: Object;
+  navbar: boolean = true ;
 
   constructor(private http: Http) { }
 
@@ -19,7 +20,7 @@ export class CourseService {
 			.map(res => res.json());
 	}
 
-  
+
 
   getSyllabus(id){
     let headers = new Headers();
@@ -28,6 +29,13 @@ export class CourseService {
       .map(res => res.json());
   }
 
+  setCourse(status: boolean){
+    this.navbar = status
+  }
+
+  onCourse(){
+    return this.navbar
+  }
 
 
 

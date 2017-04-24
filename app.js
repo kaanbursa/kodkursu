@@ -10,8 +10,8 @@ const config = require('./config/database')
 
 // const index = require('./routes/index');
 const users = require('./routes/users');
-const courses = require('./routes/courses')
-const contents = require('./routes/contents')
+const courses = require('./routes/courses');
+const contents = require('./routes/contents');
 
 // connect to database
 mongoose.connect(config.database);

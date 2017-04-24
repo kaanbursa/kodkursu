@@ -1,11 +1,9 @@
 <div class="course">
-  <div class="mdl-grid">
-    <div class="mdl-cell mdl-cell--4-col courseContent">
+    <div class="mdl-layout__header-row courseBar" >
+      <!-- Title -->
+      <span class><a class="backBtn" [routerLink]="['/profile']">&#8678;</a></span>
     </div>
-    <div class="mdl-cell mdl-cell--4-col">
-       <ace-editor
-       [(text)]="text" #editor style="height:600px;"></ace-editor>
-    </div>
-    <div class="mdl-cell mdl-cell--4-col terminal" [innerHTML]="text"></div>
-  </div>
+
+    <router-outlet></router-outlet>
+
 </div>

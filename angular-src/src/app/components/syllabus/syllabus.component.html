@@ -1,12 +1,10 @@
 <div *ngIf="course">
-
       <div id="sixt" class= "row">
         <p class="rowHeader"> {{course.title.toUpperCase()}} </p>
         <p class="rowWriting"> {{course.description}} </p>
         <button type="submit" value="Submit"
-        class="mdl-button mdl-button--colored homeSignUp" (click)="onSubmit(course)">Get Started</button>
+        class="mdl-button mdl-button--colored homeSignUp" (click)="onSubmit(course)">{{status}}</button>
       </div>
-
   <div *ngIf="course">
       <div id="fifth" >
         <h1 class="lowerHeader"> About being {{course.title}} </h1>
@@ -40,7 +38,7 @@
 					<p class="pContent">Get started with your coding career   <i class="material-icons">thumb_up</i></p>
 				</div>
 				<div class="mdl-cell mdl-cell--6-col">
-					<button class="mdl-button mdl-js-button mdl-button--raised pButton" (click)="onSubmit(course)">Get Started</button>
+					<button class="mdl-button mdl-js-button mdl-button--raised pButton" (click)="onSubmit(course)">{{status}}</button>
 				</div>
 		 </div>
 		</div>

@@ -14,6 +14,8 @@ export class SyllabusComponent implements OnInit {
   private sub: any;
   course: Object;
   syllabus: Object;
+  status: string;
+  state: boolean;
 
   constructor(private route: ActivatedRoute,
               private router: Router,
@@ -23,10 +25,9 @@ export class SyllabusComponent implements OnInit {
 
   ngOnInit() {
 
-
   this.sub = this.route.params.subscribe(params => {
        this.id = params['id'];
-       console.log(this.id)
+
 
        // In a real app: dispatch action to load the details here.
        this.courseService.getSyllabus(this.id)
@@ -34,25 +35,51 @@ export class SyllabusComponent implements OnInit {
 
          this.course = syllabus
          this.syllabus = syllabus.syllabus
-         console.log(syllabus.syllabus)
+
+         this.authService.getProfile().subscribe(data => {
+
+             for(let i = 0; i < data.course.length; i++){
+               console.log(data.course[i]['_id'])
+               if(data.course[i]['_id'].toString() === syllabus['_id'].toString()){
+                 this.status = "Continue Course"
+                 this.state = true
+                 return this.status
+               } else {
+                 this.state = false
+                 this.status = "Get Started"
+               }
+             }
+         })
+
      });
     });
+
+
+
+
 
   }
   onSubmit(course: any){
     if (this.authService.loggedIn() === false){
       this.router.navigate(['/login']);
     } else {
-      this.authService.startCourse(course).subscribe(data => {
-        console.log(course + "ola mamasita")
-        if(data.success){
-          this.router.navigate(['/course', course._id]);
-        } else {
-          this.router.navigate(['/syllabus']);
-        }
-      })
+      if(!this.state){
+        this.authService.startCourse(course).subscribe(data => {
+          if(data.success){
+            this.router.navigate(['/course', course._id]);
+          } else {
+            this.router.navigate(['/syllabus']);
+          }
+        })
+      } else {
+        this.router.navigate(['/course', course._id]);
+      }
     }
   }
+
+
+
+
 
   ngOnDestroy() {
        this.sub.unsubscribe();

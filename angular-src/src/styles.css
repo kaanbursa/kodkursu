@@ -5,8 +5,6 @@
 
 }
 
-
-
 .row#first {
 	background-size: cover;
 	height: 418px;
@@ -74,6 +72,15 @@
 	color: #5E807F;
 	padding-top: 200px;
 	font-size: 70px;
+	font-family: 'Dosis', sans-serif;
+}
+
+.contentDesc{
+	text-align: center;
+	vertical-align: middle;
+	color: #5E807F;
+	padding-top: 10px;
+	font-size: 20px;
 	font-family: 'Dosis', sans-serif;
 }
 
@@ -268,8 +275,12 @@
 }
 
 #fifth {
-	background-color: #383F51;
+	background-color: #36494E;
 	height: 400px;
+}
+
+.profileRow{
+	height: auto;
 }
 
 
@@ -299,6 +310,43 @@
   -webkit-box-shadow: 3px 3px 5px 6px #ccc;
   box-shadow:         3px 3px 5px 6px #ccc;
 	height: 600px;
+}
+
+.submitBtn{
+	background-color: white !important;
+	color: #4A525A !important;
+	border-color: #8BA6A9 !important;
+  bottom: 0;
+	margin-bottom: 53px;
+	width: 200px;
+	height: 60px;
+	position: relative;
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+	border-style: solid;
+  border-width: 0.3px;
+}
+
+.submitBtn:hover{
+	-moz-box-shadow:    1px 1px 1px 1px #ccc;
+  -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+  box-shadow:         1px 1px 1px 1px #ccc;
+}
+.submitBtn:disabled{
+	color: gray;
+	border-color: gray !important;
+}
+
+.courseBar{
+	margin-top: -50px;
+	background-color: #4A525A;
+}
+
+.backBtn{
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+
 }
 
 

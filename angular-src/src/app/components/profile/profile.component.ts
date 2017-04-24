@@ -17,7 +17,7 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
     this.authService.getProfile().subscribe(profile => {
-      console.log(profile.course)
+
       this.user = profile.user;
       var courses = []
       for(let i = 0; i < profile.course.length; i++){
@@ -32,6 +32,10 @@ export class ProfileComponent implements OnInit {
       return false;
     })
 
+  }
+
+  onSubmit(course){
+    this.router.navigate(['/course', course._id]);
   }
 
 }
