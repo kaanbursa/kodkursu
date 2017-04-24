@@ -36,20 +36,26 @@ export class SyllabusComponent implements OnInit {
          this.course = syllabus
          this.syllabus = syllabus.syllabus
 
-         this.authService.getProfile().subscribe(data => {
-
-             for(let i = 0; i < data.course.length; i++){
-               console.log(data.course[i]['_id'])
-               if(data.course[i]['_id'].toString() === syllabus['_id'].toString()){
-                 this.status = "Continue Course"
-                 this.state = true
-                 return this.status
-               } else {
-                 this.state = false
-                 this.status = "Get Started"
+         if(!this.authService.loggedIn()){
+           this.state = false
+           this.status = "Get Started"
+         } else {
+           this.authService.getProfile().subscribe(data => {
+               for(let i = 0; i < data.course.length; i++){
+                 console.log(data.course[i]['_id'])
+                 if(data.course[i]['_id'].toString() === syllabus['_id'].toString()){
+                   this.status = "Continue Course"
+                   this.state = true
+                   return this.status
+                 } else {
+                   this.state = false
+                   this.status = "Get Started"
+                 }
                }
-             }
-         })
+           })
+         }
+
+
 
      });
     });

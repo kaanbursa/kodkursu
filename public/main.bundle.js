@@ -28,13 +28,13 @@ var ContentService = (function () {
     ContentService.prototype.getContent = function (id) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
         headers.append('Content-Type', 'application/json');
-        return this.http.get('contents/content/' + id, { headers: headers })
+        return this.http.get('/contents/content/' + id, { headers: headers })
             .map(function (res) { return res.json(); });
     };
     ContentService.prototype.getLesson = function (id, contentId) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
         headers.append('Content-Type', 'application/json');
-        return this.http.get('contents/content/' + id + '/' + contentId, { headers: headers })
+        return this.http.get('/contents/content/' + id + '/' + contentId, { headers: headers })
             .map(function (res) { return res.json(); });
     };
     ContentService = __decorate([
@@ -903,20 +903,26 @@ var SyllabusComponent = (function () {
                 .subscribe(function (syllabus) {
                 _this.course = syllabus;
                 _this.syllabus = syllabus.syllabus;
-                _this.authService.getProfile().subscribe(function (data) {
-                    for (var i = 0; i < data.course.length; i++) {
-                        console.log(data.course[i]['_id']);
-                        if (data.course[i]['_id'].toString() === syllabus['_id'].toString()) {
-                            _this.status = "Continue Course";
-                            _this.state = true;
-                            return _this.status;
+                if (!_this.authService.loggedIn()) {
+                    _this.state = false;
+                    _this.status = "Get Started";
+                }
+                else {
+                    _this.authService.getProfile().subscribe(function (data) {
+                        for (var i = 0; i < data.course.length; i++) {
+                            console.log(data.course[i]['_id']);
+                            if (data.course[i]['_id'].toString() === syllabus['_id'].toString()) {
+                                _this.status = "Continue Course";
+                                _this.state = true;
+                                return _this.status;
+                            }
+                            else {
+                                _this.state = false;
+                                _this.status = "Get Started";
+                            }
                         }
-                        else {
-                            _this.state = false;
-                            _this.status = "Get Started";
-                        }
-                    }
-                });
+                    });
+                }
             });
         });
     };
@@ -1310,7 +1316,7 @@ module.exports = "<div id=\"first\" class= \"row\">\n\t<p class=\"rowHeader\"> B
 /***/ 721:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"mdl-grid\">\n\n    <div class=\"mdl-cell mdl-cell--4-col courseContent\" *ngIf=\"course\" >\n      <h3 class=\"contentDesc\">{{description}}</h3>\n      <hr>\n      <p class=\"rowWriting\">{{assignment}}<p>\n        <div class=\"mdl-grid\">\n        <button class=\"mdl-cell mdl-cell--6-col submitBtn\" (click)=\"submit()\">\n            Submit\n        </button>\n        <button class=\"mdl-cell mdl-cell--6-col submitBtn\" [disabled]=\"buttonState\" (click)=\"next()\">\n            Next\n        </button>\n      </div>\n\n    </div>\n    <div class=\"mdl-cell mdl-cell--4-col\">\n       <ace-editor\n       [(text)]=\"text\" #editor style=\"height:600px;\"></ace-editor>\n    </div>\n    <div class=\"mdl-cell mdl-cell--4-col terminal\">\n    <h3 class=\"contentDesc\">Output</h3>\n    <hr>\n    <p class=\"rowWriting\">Heelo World<p>\n      <hr>\n      <flash-messages></flash-messages>\n    </div>\n </div>\n"
+module.exports = "<div class=\"mdl-grid\">\n\n    <div class=\"mdl-cell mdl-cell--4-col courseContent\" *ngIf=\"course\" >\n      <h3 class=\"contentDesc\">{{description}}</h3>\n      <hr>\n      <p class=\"rowWriting\">{{assignment}}<p>\n        <div class=\"mdl-grid\">\n        <button class=\"mdl-cell mdl-cell--6-col submitBtn\" (click)=\"submit()\">\n            Submit\n        </button>\n        <button class=\"mdl-cell mdl-cell--6-col submitBtn\" [disabled]=\"buttonState\" (click)=\"next()\">\n            Next\n        </button>\n      </div>\n\n    </div>\n    <div class=\"mdl-cell mdl-cell--4-col\">\n       <ace-editor\n       [(text)]=\"text\" #editor style=\"height:600px;\"></ace-editor>\n    </div>\n    <div class=\"mdl-cell mdl-cell--4-col terminal\">\n    <h3 class=\"contentDesc\">Output</h3>\n    <hr>\n    <p class=\"rowWriting\">Heelo World<p>\n      <hr>\n      <flash-messages></flash-messages> \n    </div>\n </div>\n"
 
 /***/ }),
 

@@ -13,14 +13,14 @@ export class ContentService {
   getContent(id){
 		let headers = new Headers();
 		headers.append('Content-Type', 'application/json')
-		return this.http.get('contents/content/' + id, {headers: headers})
+		return this.http.get('/contents/content/' + id, {headers: headers})
 			.map(res => res.json());
 	}
 
   getLesson(id, contentId){
     let headers = new Headers();
 		headers.append('Content-Type', 'application/json')
-		return this.http.get('contents/content/' + id + '/' + contentId, {headers: headers})
+		return this.http.get('/contents/content/' + id + '/' + contentId, {headers: headers})
 			.map(res => res.json());
   }
 
