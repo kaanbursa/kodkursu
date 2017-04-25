@@ -48,7 +48,7 @@ var ContentService = (function () {
 
 /***/ }),
 
-/***/ 340:
+/***/ 339:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -89,7 +89,7 @@ var ValidateService = (function () {
 
 /***/ }),
 
-/***/ 400:
+/***/ 401:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -98,20 +98,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 400;
+webpackEmptyContext.id = 401;
 
 
 /***/ }),
 
-/***/ 401:
+/***/ 402:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(491);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(492);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(536);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(523);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(537);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(524);
 
 
 
@@ -124,7 +124,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 522:
+/***/ 523:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -147,8 +147,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-root',
-            template: __webpack_require__(716),
-            styles: [__webpack_require__(705)]
+            template: __webpack_require__(717),
+            styles: [__webpack_require__(706)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -158,36 +158,36 @@ var AppComponent = (function () {
 
 /***/ }),
 
-/***/ 523:
+/***/ 524:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(153);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(482);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(483);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(522);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_navbar_navbar_component__ = __webpack_require__(530);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_login_login_component__ = __webpack_require__(529);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_register_register_component__ = __webpack_require__(532);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__ = __webpack_require__(527);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_dashboard_dashboard_component__ = __webpack_require__(525);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__ = __webpack_require__(531);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_footer_footer_component__ = __webpack_require__(526);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_syllabus_syllabus_component__ = __webpack_require__(533);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_course_course_component__ = __webpack_require__(524);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_lesson_lesson_component__ = __webpack_require__(528);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_ng2_ace_editor__ = __webpack_require__(700);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(523);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_navbar_navbar_component__ = __webpack_require__(531);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_login_login_component__ = __webpack_require__(530);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_register_register_component__ = __webpack_require__(533);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_home_home_component__ = __webpack_require__(528);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_dashboard_dashboard_component__ = __webpack_require__(526);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_profile_profile_component__ = __webpack_require__(532);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_footer_footer_component__ = __webpack_require__(527);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_syllabus_syllabus_component__ = __webpack_require__(534);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_course_course_component__ = __webpack_require__(525);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_lesson_lesson_component__ = __webpack_require__(529);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_ng2_ace_editor__ = __webpack_require__(701);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_ng2_ace_editor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_ng2_ace_editor__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_validate_service__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_validate_service__ = __webpack_require__(339);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__services_auth_service__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_course_service__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_content_service__ = __webpack_require__(221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_angular2_flash_messages__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_21_angular2_flash_messages__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__guards_auth_guard__ = __webpack_require__(534);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__tools_pipe_module__ = __webpack_require__(535);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__guards_auth_guard__ = __webpack_require__(535);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__tools_pipe_module__ = __webpack_require__(536);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -271,7 +271,7 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 524:
+/***/ 525:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -279,9 +279,9 @@ var AppModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_course_service__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_content_service__ = __webpack_require__(221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_brace_theme_github__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_brace_theme_github__ = __webpack_require__(343);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_brace_theme_github___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_brace_theme_github__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_brace_mode_javascript__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_brace_mode_javascript__ = __webpack_require__(342);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_brace_mode_javascript___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_brace_mode_javascript__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CourseComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -324,8 +324,8 @@ var CourseComponent = (function () {
     CourseComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-course',
-            template: __webpack_require__(717),
-            styles: [__webpack_require__(706)]
+            template: __webpack_require__(718),
+            styles: [__webpack_require__(707)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_course_service__["a" /* CourseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_course_service__["a" /* CourseService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__services_content_service__["a" /* ContentService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_content_service__["a" /* ContentService */]) === 'function' && _d) || Object])
     ], CourseComponent);
@@ -336,7 +336,7 @@ var CourseComponent = (function () {
 
 /***/ }),
 
-/***/ 525:
+/***/ 526:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -381,8 +381,8 @@ var DashboardComponent = (function () {
     DashboardComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-dashboard',
-            template: __webpack_require__(718),
-            styles: [__webpack_require__(707)]
+            template: __webpack_require__(719),
+            styles: [__webpack_require__(708)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_course_service__["a" /* CourseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_course_service__["a" /* CourseService */]) === 'function' && _b) || Object])
     ], DashboardComponent);
@@ -393,7 +393,7 @@ var DashboardComponent = (function () {
 
 /***/ }),
 
-/***/ 526:
+/***/ 527:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -420,8 +420,8 @@ var FooterComponent = (function () {
     FooterComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-footer',
-            template: __webpack_require__(719),
-            styles: [__webpack_require__(708)]
+            template: __webpack_require__(720),
+            styles: [__webpack_require__(709)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_course_service__["a" /* CourseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_course_service__["a" /* CourseService */]) === 'function' && _a) || Object])
     ], FooterComponent);
@@ -432,7 +432,7 @@ var FooterComponent = (function () {
 
 /***/ }),
 
-/***/ 527:
+/***/ 528:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -485,8 +485,8 @@ var HomeComponent = (function () {
     HomeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-home',
-            template: __webpack_require__(720),
-            styles: [__webpack_require__(709)]
+            template: __webpack_require__(721),
+            styles: [__webpack_require__(710)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__services_course_service__["a" /* CourseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_course_service__["a" /* CourseService */]) === 'function' && _c) || Object])
     ], HomeComponent);
@@ -494,11 +494,11 @@ var HomeComponent = (function () {
     var _a, _b, _c;
 }());
 //# sourceMappingURL=/Users/kaanbursa/Desktop/byteplex/angular-src/src/home.component.js.map
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(545).Buffer))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(546).Buffer))
 
 /***/ }),
 
-/***/ 528:
+/***/ 529:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -508,9 +508,9 @@ var HomeComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_content_service__ = __webpack_require__(221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular2_flash_messages__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_angular2_flash_messages__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_brace_theme_github__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_brace_theme_github__ = __webpack_require__(343);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_brace_theme_github___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_brace_theme_github__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_brace_mode_javascript__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_brace_mode_javascript__ = __webpack_require__(342);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_brace_mode_javascript___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_brace_mode_javascript__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LessonComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -601,8 +601,8 @@ var LessonComponent = (function () {
     LessonComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-lesson',
-            template: __webpack_require__(721),
-            styles: [__webpack_require__(710)]
+            template: __webpack_require__(722),
+            styles: [__webpack_require__(711)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__services_content_service__["a" /* ContentService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_content_service__["a" /* ContentService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__services_course_service__["a" /* CourseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_course_service__["a" /* CourseService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _e) || Object])
     ], LessonComponent);
@@ -613,7 +613,7 @@ var LessonComponent = (function () {
 
 /***/ }),
 
-/***/ 529:
+/***/ 530:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -664,8 +664,8 @@ var LoginComponent = (function () {
     LoginComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-login',
-            template: __webpack_require__(722),
-            styles: [__webpack_require__(711)]
+            template: __webpack_require__(723),
+            styles: [__webpack_require__(712)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === 'function' && _c) || Object])
     ], LoginComponent);
@@ -676,7 +676,7 @@ var LoginComponent = (function () {
 
 /***/ }),
 
-/***/ 530:
+/***/ 531:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -718,8 +718,8 @@ var NavbarComponent = (function () {
     NavbarComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-navbar',
-            template: __webpack_require__(723),
-            styles: [__webpack_require__(712)]
+            template: __webpack_require__(724),
+            styles: [__webpack_require__(713)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__services_course_service__["a" /* CourseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_course_service__["a" /* CourseService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === 'function' && _d) || Object])
     ], NavbarComponent);
@@ -730,7 +730,7 @@ var NavbarComponent = (function () {
 
 /***/ }),
 
-/***/ 531:
+/***/ 532:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -775,8 +775,8 @@ var ProfileComponent = (function () {
     ProfileComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-profile',
-            template: __webpack_require__(724),
-            styles: [__webpack_require__(713)]
+            template: __webpack_require__(725),
+            styles: [__webpack_require__(714)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_auth_service__["a" /* AuthService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === 'function' && _b) || Object])
     ], ProfileComponent);
@@ -787,12 +787,12 @@ var ProfileComponent = (function () {
 
 /***/ }),
 
-/***/ 532:
+/***/ 533:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_validate_service__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_validate_service__ = __webpack_require__(339);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_auth_service__ = __webpack_require__(56);
@@ -853,8 +853,8 @@ var RegisterComponent = (function () {
     RegisterComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-register',
-            template: __webpack_require__(725),
-            styles: [__webpack_require__(714)]
+            template: __webpack_require__(726),
+            styles: [__webpack_require__(715)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_validate_service__["a" /* ValidateService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_validate_service__["a" /* ValidateService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__["FlashMessagesService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2_angular2_flash_messages__["FlashMessagesService"]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_auth_service__["a" /* AuthService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* Router */]) === 'function' && _d) || Object])
     ], RegisterComponent);
@@ -865,7 +865,7 @@ var RegisterComponent = (function () {
 
 /***/ }),
 
-/***/ 533:
+/***/ 534:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -953,8 +953,8 @@ var SyllabusComponent = (function () {
     SyllabusComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-syllabus',
-            template: __webpack_require__(726),
-            styles: [__webpack_require__(715)]
+            template: __webpack_require__(727),
+            styles: [__webpack_require__(716)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_auth_service__["a" /* AuthService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__services_course_service__["a" /* CourseService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_course_service__["a" /* CourseService */]) === 'function' && _d) || Object])
     ], SyllabusComponent);
@@ -965,7 +965,7 @@ var SyllabusComponent = (function () {
 
 /***/ }),
 
-/***/ 534:
+/***/ 535:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1010,7 +1010,7 @@ var AuthGuard = (function () {
 
 /***/ }),
 
-/***/ 535:
+/***/ 536:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1046,7 +1046,7 @@ var ValuesPipe = (function () {
 
 /***/ }),
 
-/***/ 536:
+/***/ 537:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1070,7 +1070,7 @@ var environment = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(105);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(244);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_jwt__ = __webpack_require__(541);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_jwt__ = __webpack_require__(542);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_jwt___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_jwt__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1201,13 +1201,6 @@ var CourseService = (function () {
 
 /***/ }),
 
-/***/ 705:
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
 /***/ 706:
 /***/ (function(module, exports) {
 
@@ -1232,136 +1225,143 @@ module.exports = ""
 /***/ 709:
 /***/ (function(module, exports) {
 
-module.exports = "\n"
+module.exports = ""
 
 /***/ }),
 
 /***/ 710:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "\n"
 
 /***/ }),
 
 /***/ 711:
 /***/ (function(module, exports) {
 
-module.exports = ".mdl-layout {\n\t-webkit-box-align: center;\n\t    -ms-flex-align: center;\n\t        align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n}\n.mdl-layout__content {\n\tpadding: 24px;\n\t-webkit-box-flex: 0;\n\t    -ms-flex: none;\n\t        flex: none;\n}\n"
+module.exports = ""
 
 /***/ }),
 
 /***/ 712:
 /***/ (function(module, exports) {
 
-module.exports = "a {\n\ttext-decoration: none;\n\tcolor: #5E807F;\n}\n\n.mdl-navigation__link{\n\tcolor: #5E807F;\n}\n\n.mdl-layout__header {\n\tbackground-color: white;\n\tbox-shadow: none;\n}\n"
+module.exports = ".mdl-layout {\n\t-webkit-box-align: center;\n\t    -ms-flex-align: center;\n\t        align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n}\n.mdl-layout__content {\n\tpadding: 24px;\n\t-webkit-box-flex: 0;\n\t    -ms-flex: none;\n\t        flex: none;\n}\n"
 
 /***/ }),
 
 /***/ 713:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = "a {\n\ttext-decoration: none;\n\tcolor: #5E807F;\n}\n\n.mdl-navigation__link{\n\tcolor: #5E807F;\n}\n\n.mdl-layout__header {\n\tbackground-color: white;\n\tbox-shadow: none;\n}\n"
 
 /***/ }),
 
 /***/ 714:
 /***/ (function(module, exports) {
 
-module.exports = ".mdl-layout {\n\t-webkit-box-align: center;\n\t    -ms-flex-align: center;\n\t        align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n}\n.mdl-layout__content {\n\tpadding: 24px;\n\t-webkit-box-flex: 0;\n\t    -ms-flex: none;\n\t        flex: none;\n}\n"
+module.exports = ""
 
 /***/ }),
 
 /***/ 715:
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".mdl-layout {\n\t-webkit-box-align: center;\n\t    -ms-flex-align: center;\n\t        align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n}\n.mdl-layout__content {\n\tpadding: 24px;\n\t-webkit-box-flex: 0;\n\t    -ms-flex: none;\n\t        flex: none;\n}\n"
 
 /***/ }),
 
 /***/ 716:
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar> </app-navbar>\n\n\t<div>\n\t<router-outlet> </router-outlet>\n\t</div>\n\n\n<app-footer> </app-footer>\n"
+module.exports = ""
 
 /***/ }),
 
 /***/ 717:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"course\">\n    <div class=\"mdl-layout__header-row courseBar\" >\n      <!-- Title -->\n      <span class><a class=\"backBtn\" [routerLink]=\"['/profile']\">&#8678;</a></span>\n    </div>\n\n    <router-outlet></router-outlet>\n\n</div>\n"
+module.exports = "<app-navbar> </app-navbar>\n\n\t<div>\n\t<router-outlet> </router-outlet>\n\t</div>\n\n\n<app-footer> </app-footer>\n"
 
 /***/ }),
 
 /***/ 718:
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"dashboard\" class= \"row\" >\n\t<p id=\"dashboardHeader\" class=\"pageHeader\"> Choose your Course <p>\n\t\t<div class=\"mdl-grid\">\n\t\t\t\t<div class=\"mdl-cell mdl-cell--3-col\" *ngFor=\"let course of course\" (click)=\"onSelect(course)\">\n\t\t\t\t\t<div class=\"demo-card-square mdl-card mdl-shadow--2dp\">\n\t\t\t\t\t\t<img class=\"courseImages\" src=\"../../assets/javascript@2x.png\">\n\t\t\t\t  \t<div class=\"mdl-card__title mdl-card--expand\">\n\t\t\t\t    \t<h2 class=\"mdl-card__title-text\">{{course.title}}</h2>\n\t\t\t\t  \t</div>\n\n\t\t\t\t\t  <div class=\"mdl-card__supporting-text\">\n\t\t\t\t\t    {{course.description}}\n\t\t\t\t\t  </div>\n\t\t\t\t\t  <div class=\"mdl-card__actions mdl-card--border\">\n\t\t\t\t\t    <a class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect\" (click)=\"onSubmit(course)\">\n\t\t\t\t\t      View Syllabus\n\t\t\t\t\t    </a>\n\t\t\t\t\t  </div>\n\t\t\t\t </div>\n\t\t\t </div>\n\t </div>\n</div>\n"
+module.exports = "<div class=\"course\">\n    <div class=\"mdl-layout__header-row courseBar\" >\n      <!-- Title -->\n      <span class><a class=\"backBtn\" [routerLink]=\"['/profile']\">&#8678;</a></span>\n    </div>\n\n    <router-outlet></router-outlet>\n\n</div>\n"
 
 /***/ }),
 
 /***/ 719:
 /***/ (function(module, exports) {
 
-module.exports = "<footer class=\"mdl-mega-footer\" *ngIf=\"courseService.onCourse()\">\n  <div class=\"mdl-mega-footer__middle-section\">\n\n    <div class=\"mdl-mega-footer__drop-down-section\">\n      <input class=\"mdl-mega-footer__heading-checkbox\" type=\"checkbox\" checked>\n      <h1 class=\"mdl-mega-footer__heading\">Features</h1>\n      <ul class=\"mdl-mega-footer__link-list\">\n        <li><a href=\"#\">About</a></li>\n        <li><a href=\"#\">Terms</a></li>\n        <li><a href=\"#\">Partners</a></li>\n        <li><a href=\"#\">Updates</a></li>\n      </ul>\n    </div>\n\n    <div class=\"mdl-mega-footer__drop-down-section\">\n      <input class=\"mdl-mega-footer__heading-checkbox\" type=\"checkbox\" checked>\n      <h1 class=\"mdl-mega-footer__heading\">Details</h1>\n      <ul class=\"mdl-mega-footer__link-list\">\n        <li><a href=\"#\">Specs</a></li>\n        <li><a href=\"#\">Tools</a></li>\n        <li><a href=\"#\">Resources</a></li>\n      </ul>\n    </div>\n\n    <div class=\"mdl-mega-footer__drop-down-section\">\n      <input class=\"mdl-mega-footer__heading-checkbox\" type=\"checkbox\" checked>\n      <h1 class=\"mdl-mega-footer__heading\">Technology</h1>\n      <ul class=\"mdl-mega-footer__link-list\">\n        <li><a href=\"#\">How it works</a></li>\n        <li><a href=\"#\">Patterns</a></li>\n        <li><a href=\"#\">Usage</a></li>\n        <li><a href=\"#\">Products</a></li>\n        <li><a href=\"#\">Contracts</a></li>\n      </ul>\n    </div>\n\n    <div class=\"mdl-mega-footer__drop-down-section\">\n      <input class=\"mdl-mega-footer__heading-checkbox\" type=\"checkbox\" checked>\n      <h1 class=\"mdl-mega-footer__heading\">FAQ</h1>\n      <ul class=\"mdl-mega-footer__link-list\">\n        <li><a href=\"#\">Questions</a></li>\n        <li><a href=\"#\">Answers</a></li>\n        <li><a href=\"#\">Contact us</a></li>\n      </ul>\n    </div>\n\n  </div>\n\n  <div class=\"mdl-mega-footer__bottom-section\">\n    <div class=\"mdl-logo\">Byteplex</div>\n    <ul class=\"mdl-mega-footer__link-list\">\n      <li><a href=\"#\">Help</a></li>\n      <li><a href=\"#\">Privacy & Terms</a></li>\n    </ul>\n  </div>\n\n</footer>\n"
+module.exports = "<div id=\"dashboard\" class= \"row\" >\n\t<p id=\"dashboardHeader\" class=\"pageHeader\"> Choose your Course <p>\n\t\t<div class=\"mdl-grid\">\n\t\t\t\t<div class=\"mdl-cell mdl-cell--3-col\" *ngFor=\"let course of course\" (click)=\"onSelect(course)\">\n\t\t\t\t\t<div class=\"demo-card-square mdl-card mdl-shadow--2dp\">\n\t\t\t\t\t\t<img class=\"courseImages\" src=\"../../assets/javascript@2x.png\">\n\t\t\t\t  \t<div class=\"mdl-card__title mdl-card--expand\">\n\t\t\t\t    \t<h2 class=\"mdl-card__title-text\">{{course.title}}</h2>\n\t\t\t\t  \t</div>\n\n\t\t\t\t\t  <div class=\"mdl-card__supporting-text\">\n\t\t\t\t\t    {{course.description}}\n\t\t\t\t\t  </div>\n\t\t\t\t\t  <div class=\"mdl-card__actions mdl-card--border\">\n\t\t\t\t\t    <a class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect\" (click)=\"onSubmit(course)\">\n\t\t\t\t\t      View Syllabus\n\t\t\t\t\t    </a>\n\t\t\t\t\t  </div>\n\t\t\t\t </div>\n\t\t\t </div>\n\t </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 720:
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"first\" class= \"row\">\n\t<p class=\"rowHeader\"> Become a Hacker. </p>\n\t<p class=\"rowWriting\"> Learn how to code and analyse data </p>\n\t<button type=\"submit\" value=\"Submit\"\n\tclass=\"mdl-button mdl-button--colored homeSignUp\" [routerLink] = \"['/register']\">Sign Up</button>\n</div>\n\n\n<div id=\"second\" class= \"mdl-grid row\">\n\n\t<div class=\"mdl-cell mdl-cell--12-col\">\n\t\t<img class=\"roundImage\" src=\"../../assets/wizard.png\">\n\t\t<h1 class=\"lowerHeader\"> Code and be the wizard of your era</h1>\n\t\t<p id=\"column2\" class=\"rowWriting\"> Learn from basic to intermediate and create new stuff that really matters! </p>\n\n\t</div>\n</div>\n\n<div id=\"third\" class= \"row\" >\n\t<p class=\"pageHeader\"> Our Courses <p>\n\t\t<div class=\"mdl-grid\">\n\t\t\t\t<div class=\"mdl-cell mdl-cell--3-col\" *ngFor=\"let course of course\">\n\t\t\t\t\t<div class=\"demo-card-square mdl-card mdl-shadow--2dp\">\n\t\t\t\t\t\t<img class=\"courseImages\" ng-src=\"data:image/png;base64,+ window.btoa(course.image.data.data)\">\n\t\t\t\t  \t<div class=\"mdl-card__title mdl-card--expand\">\n\t\t\t\t    \t<h2 class=\"mdl-card__title-text\">{{course.title}}</h2>\n\t\t\t\t  \t</div>\n\n\t\t\t\t\t  <div class=\"mdl-card__supporting-text\">\n\t\t\t\t\t    {{course.description}}\n\t\t\t\t\t  </div>\n\t\t\t\t\t  <div class=\"mdl-card__actions mdl-card--border\">\n\t\t\t\t\t    <button type=\"button\" class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect\"  (click)=\"onSubmit(course)\">\n\t\t\t\t\t      View Syllabus\n\t\t\t\t\t    </button>\n\t\t\t\t\t  </div>\n\t\t\t\t </div>\n\t\t\t </div>\n\t </div>\n</div>\n\n<div id=\"fourth\" class=\"row\">\n\n\t\t<div class=\"mdl-cell mdl-cell--8-col getStarted\">\n\t\t\t<div class=\"mdl-grid getStartedWriting\">\n\t\t\t\t<div class=\"mdl-cell mdl-cell--6-col\">\n\t\t\t\t\t<p class=\"pContent\">Get started with your coding career   <i class=\"material-icons\">thumb_up</i></p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"mdl-cell mdl-cell--6-col\">\n\t\t\t\t\t<button class=\"mdl-button mdl-js-button mdl-button--raised pButton\" [routerLink] = \"['/register']\">Get Started</button>\n\t\t\t\t</div>\n\t\t </div>\n\t\t</div>\n\n\n</div>\n"
+module.exports = "<footer class=\"mdl-mega-footer\" *ngIf=\"courseService.onCourse()\">\n  <div class=\"mdl-mega-footer__middle-section\">\n\n    <div class=\"mdl-mega-footer__drop-down-section\">\n      <input class=\"mdl-mega-footer__heading-checkbox\" type=\"checkbox\" checked>\n      <h1 class=\"mdl-mega-footer__heading\">Features</h1>\n      <ul class=\"mdl-mega-footer__link-list\">\n        <li><a href=\"#\">About</a></li>\n        <li><a href=\"#\">Terms</a></li>\n        <li><a href=\"#\">Partners</a></li>\n        <li><a href=\"#\">Updates</a></li>\n      </ul>\n    </div>\n\n    <div class=\"mdl-mega-footer__drop-down-section\">\n      <input class=\"mdl-mega-footer__heading-checkbox\" type=\"checkbox\" checked>\n      <h1 class=\"mdl-mega-footer__heading\">Details</h1>\n      <ul class=\"mdl-mega-footer__link-list\">\n        <li><a href=\"#\">Specs</a></li>\n        <li><a href=\"#\">Tools</a></li>\n        <li><a href=\"#\">Resources</a></li>\n      </ul>\n    </div>\n\n    <div class=\"mdl-mega-footer__drop-down-section\">\n      <input class=\"mdl-mega-footer__heading-checkbox\" type=\"checkbox\" checked>\n      <h1 class=\"mdl-mega-footer__heading\">Technology</h1>\n      <ul class=\"mdl-mega-footer__link-list\">\n        <li><a href=\"#\">How it works</a></li>\n        <li><a href=\"#\">Patterns</a></li>\n        <li><a href=\"#\">Usage</a></li>\n        <li><a href=\"#\">Products</a></li>\n        <li><a href=\"#\">Contracts</a></li>\n      </ul>\n    </div>\n\n    <div class=\"mdl-mega-footer__drop-down-section\">\n      <input class=\"mdl-mega-footer__heading-checkbox\" type=\"checkbox\" checked>\n      <h1 class=\"mdl-mega-footer__heading\">FAQ</h1>\n      <ul class=\"mdl-mega-footer__link-list\">\n        <li><a href=\"#\">Questions</a></li>\n        <li><a href=\"#\">Answers</a></li>\n        <li><a href=\"#\">Contact us</a></li>\n      </ul>\n    </div>\n\n  </div>\n\n  <div class=\"mdl-mega-footer__bottom-section\">\n    <div class=\"mdl-logo\">Byteplex</div>\n    <ul class=\"mdl-mega-footer__link-list\">\n      <li><a href=\"#\">Help</a></li>\n      <li><a href=\"#\">Privacy & Terms</a></li>\n    </ul>\n  </div>\n\n</footer>\n"
 
 /***/ }),
 
 /***/ 721:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"mdl-grid\">\n\n    <div class=\"mdl-cell mdl-cell--4-col courseContent\" *ngIf=\"course\" >\n      <h3 class=\"contentDesc\">{{description}}</h3>\n      <hr>\n      <p class=\"rowWriting\">{{assignment}}<p>\n        <div class=\"mdl-grid\">\n        <button class=\"mdl-cell mdl-cell--6-col submitBtn\" (click)=\"submit()\">\n            Submit\n        </button>\n        <button class=\"mdl-cell mdl-cell--6-col submitBtn\" [disabled]=\"buttonState\" (click)=\"next()\">\n            Next\n        </button>\n      </div>\n\n    </div>\n    <div class=\"mdl-cell mdl-cell--4-col\">\n       <ace-editor\n       [(text)]=\"text\" #editor style=\"height:600px;\"></ace-editor>\n    </div>\n    <div class=\"mdl-cell mdl-cell--4-col terminal\">\n    <h3 class=\"contentDesc\">Output</h3>\n    <hr>\n    <p class=\"rowWriting\">Heelo World<p>\n      <hr>\n      <flash-messages></flash-messages> \n    </div>\n </div>\n"
+module.exports = "<div id=\"first\" class= \"row\">\n\t<p class=\"rowHeader\"> Become a Hacker. </p>\n\t<p class=\"rowWriting\"> Learn how to code and analyse data </p>\n\t<button type=\"submit\" value=\"Submit\"\n\tclass=\"mdl-button mdl-button--colored homeSignUp\" [routerLink] = \"['/register']\">Sign Up</button>\n</div>\n\n\n<div id=\"second\" class= \"mdl-grid row\">\n\n\t<div class=\"mdl-cell mdl-cell--12-col\">\n\t\t<img class=\"roundImage\" src=\"../../assets/wizard.png\">\n\t\t<h1 class=\"lowerHeader\"> Code and be the wizard of your era</h1>\n\t\t<p id=\"column2\" class=\"rowWriting\"> Learn from basic to intermediate and create new stuff that really matters! </p>\n\n\t</div>\n</div>\n\n<div id=\"third\" class= \"row\" >\n\t<p class=\"pageHeader\"> Our Courses <p>\n\t\t<div class=\"mdl-grid\">\n\t\t\t\t<div class=\"mdl-cell mdl-cell--3-col\" *ngFor=\"let course of course\">\n\t\t\t\t\t<div class=\"demo-card-square mdl-card mdl-shadow--2dp\">\n\t\t\t\t\t\t<img class=\"courseImages\" ng-src=\"data:image/png;base64,+ window.btoa(course.image.data.data)\">\n\t\t\t\t  \t<div class=\"mdl-card__title mdl-card--expand\">\n\t\t\t\t    \t<h2 class=\"mdl-card__title-text\">{{course.title}}</h2>\n\t\t\t\t  \t</div>\n\n\t\t\t\t\t  <div class=\"mdl-card__supporting-text\">\n\t\t\t\t\t    {{course.description}}\n\t\t\t\t\t  </div>\n\t\t\t\t\t  <div class=\"mdl-card__actions mdl-card--border\">\n\t\t\t\t\t    <button type=\"button\" class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect\"  (click)=\"onSubmit(course)\">\n\t\t\t\t\t      View Syllabus\n\t\t\t\t\t    </button>\n\t\t\t\t\t  </div>\n\t\t\t\t </div>\n\t\t\t </div>\n\t </div>\n</div>\n\n<div id=\"fourth\" class=\"row\">\n\n\t\t<div class=\"mdl-cell mdl-cell--8-col getStarted\">\n\t\t\t<div class=\"mdl-grid getStartedWriting\">\n\t\t\t\t<div class=\"mdl-cell mdl-cell--6-col\">\n\t\t\t\t\t<p class=\"pContent\">Get started with your coding career   <i class=\"material-icons\">thumb_up</i></p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"mdl-cell mdl-cell--6-col\">\n\t\t\t\t\t<button class=\"mdl-button mdl-js-button mdl-button--raised pButton\" [routerLink] = \"['/register']\">Get Started</button>\n\t\t\t\t</div>\n\t\t </div>\n\t\t</div>\n\n\n</div>\n"
 
 /***/ }),
 
 /***/ 722:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n  <div class=\"mdl-layout mdl-js-layout\">\n\n\t\t<div class=\"mdl-card mdl-shadow--6dp\">\n\t  \t<div class=\"mdl-card__supporting-text\">\n\t\t\t\t<form (submit)=\"onLoginSubmit()\">\n\t\t\t\t<flash-messages></flash-messages>\n\n\t\t\t\t\t<div class=\"mdl-textfield mdl-js-textfield\">\n\t\t\t\t\t\t<input placeholder=\"Username\" class=\"mdl-textfield__input\" type=\"text\" [(ngModel)]= \"username\" name=\"username\"/>\n\t\t\t\t\t\t<!-- <label class=\"mdl-textfield__label\" for=\"username\">Username</label> -->\n\t\t\t\t\t</div>\n\n\n\t\t\t\t\t<div class=\"mdl-textfield mdl-js-textfield\">\n\t\t\t\t\t\t<input placeholder=\"Password\" class=\"mdl-textfield__input\" type=\"password\" [(ngModel)]= \"password\" name=\"password\"/>\n\t\t\t\t\t\t<!-- <label class=\"mdl-textfield__label\" for=\"userpass\">Password</label> -->\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"mdl-card__actions \">\n\t\t\t\t<button type=\"submit\" value=\"Submit\" class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect signUp\">Login</button>\n\t\t\t</div>\n\t\t\t\t</form>\n\t\t\t</div>\n\n\t\t</div>\n\n</div>\n</div>\n"
+module.exports = "<div class=\"mdl-grid\">\n\n    <div class=\"mdl-cell mdl-cell--4-col courseContent\" *ngIf=\"course\" >\n      <h3 class=\"contentDesc\">{{description}}</h3>\n      <hr>\n      <p class=\"rowWriting\">{{assignment}}<p>\n        <div class=\"mdl-grid\">\n        <button class=\"mdl-cell mdl-cell--6-col submitBtn\" (click)=\"submit()\">\n            Submit\n        </button>\n        <button class=\"mdl-cell mdl-cell--6-col submitBtn\" [disabled]=\"buttonState\" (click)=\"next()\">\n            Next\n        </button>\n      </div>\n\n    </div>\n    <div class=\"mdl-cell mdl-cell--4-col\">\n       <ace-editor\n       [(text)]=\"text\" #editor style=\"height:600px;\"></ace-editor>\n    </div>\n    <div class=\"mdl-cell mdl-cell--4-col terminal\">\n    <h3 class=\"contentDesc\">Output</h3>\n    <hr>\n    <p class=\"rowWriting\">Heelo World<p>\n      <hr>\n      <flash-messages></flash-messages> \n    </div>\n </div>\n"
 
 /***/ }),
 
 /***/ 723:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"mdl-layout mdl-js-layout mdl-layout--fixed-header\" *ngIf=\"courseService.onCourse()\">\n  <header class=\"mdl-layout__header\">\n    <div class=\"mdl-layout__header-row\"  >\n      <!-- Title -->\n      <span class=\"mdl-layout-title\"><a [routerLink]=\"['/']\">Byteplex</a></span>\n      <!-- Add spacer, to align navigation to the right -->\n      <div class=\"mdl-layout-spacer\"></div>\n      <!-- Navigation. We hide it in small screens. -->\n      <nav class=\"mdl-navigation mdl-layout--large-screen-only\">\n        <a *ngIf=\"!authService.loggedIn()\" class=\"mdl-navigation__link\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\" [routerLink]=\"['/register']\">Sign Up</a>\n        <a *ngIf=\"!authService.loggedIn()\" class=\"mdl-navigation__link\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\" [routerLink]=\"['/login']\">Login</a>\n        <a *ngIf=\"authService.loggedIn()\" class=\"mdl-navigation__link\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\" [routerLink]=\"['/profile']\">Profile</a>\n        <a *ngIf=\"authService.loggedIn()\" class=\"mdl-navigation__link\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\" [routerLink]=\"['/dashboard']\">Dashboard</a>\n        <a *ngIf=\"authService.loggedIn()\" class=\"mdl-navigation__link\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\" href=\"#\" (click)='onLogoutClick()'>Logout</a>\n\n      </nav>\n    </div>\n  </header>\n</div>\n"
+module.exports = "<div class=\"row\">\n  <div class=\"mdl-layout mdl-js-layout\">\n\n\t\t<div class=\"mdl-card mdl-shadow--6dp\">\n\t  \t<div class=\"mdl-card__supporting-text\">\n\t\t\t\t<form (submit)=\"onLoginSubmit()\">\n\t\t\t\t<flash-messages></flash-messages>\n\n\t\t\t\t\t<div class=\"mdl-textfield mdl-js-textfield\">\n\t\t\t\t\t\t<input placeholder=\"Username\" class=\"mdl-textfield__input\" type=\"text\" [(ngModel)]= \"username\" name=\"username\"/>\n\t\t\t\t\t\t<!-- <label class=\"mdl-textfield__label\" for=\"username\">Username</label> -->\n\t\t\t\t\t</div>\n\n\n\t\t\t\t\t<div class=\"mdl-textfield mdl-js-textfield\">\n\t\t\t\t\t\t<input placeholder=\"Password\" class=\"mdl-textfield__input\" type=\"password\" [(ngModel)]= \"password\" name=\"password\"/>\n\t\t\t\t\t\t<!-- <label class=\"mdl-textfield__label\" for=\"userpass\">Password</label> -->\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"mdl-card__actions \">\n\t\t\t\t<button type=\"submit\" value=\"Submit\" class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect signUp\">Login</button>\n\t\t\t</div>\n\t\t\t\t</form>\n\t\t\t</div>\n\n\t\t</div>\n\n</div>\n</div>\n"
 
 /***/ }),
 
 /***/ 724:
 /***/ (function(module, exports) {
 
-module.exports = "<div  class=\"profileRow\" *ngIf=\"user\">\n  <div class=\"mdl-grid\">\n    <div class=\"mdl-cell mdl-cell--2-col\">\n      <img class=\"profilePic\" src=\"http://s3.amazonaws.com/37assets/svn/765-default-avatar.png\">\n    </div>\n    <div class=\"mdl-cell mdl-cell--6-col profileColumnn\">\n    <p class=\"userName\"> {{user.name.toUpperCase()}} </p>\n      <!-- <ul>\n        <li>Username: {{user.username}}</li>\n        <li>Email: {{user.email}}</li>\n      </ul> -->\n  </div>\n\n  </div>\n  <hr>\n  <h3 class=\"contentDesc\">My Courses</h3>\n  <div class=\"mdl-grid\">\n      <div class=\"mdl-cell mdl-cell--3-col\" *ngFor=\"let course of course\" (click)=\"onSelect(course)\">\n        <div class=\"demo-card-square mdl-card mdl-shadow--2dp\">\n          <img class=\"courseImages\" src=\"../../assets/javascript@2x.png\">\n          <div class=\"mdl-card__title mdl-card--expand\">\n            <h2 class=\"mdl-card__title-text\">{{course.title}}</h2>\n          </div>\n\n          <div class=\"mdl-card__supporting-text\">\n            {{course.description}}\n          </div>\n          <div class=\"mdl-card__actions mdl-card--border\">\n            <a class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect\" (click)=\"onSubmit(course)\">\n              Continue Course\n            </a>\n          </div>\n       </div>\n     </div>\n </div>\n\n</div>\n"
+module.exports = "<div class=\"mdl-layout mdl-js-layout mdl-layout--fixed-header\" *ngIf=\"courseService.onCourse()\">\n  <header class=\"mdl-layout__header\">\n    <div class=\"mdl-layout__header-row\"  >\n      <!-- Title -->\n      <span class=\"mdl-layout-title\"><a [routerLink]=\"['/']\">Byteplex</a></span>\n      <!-- Add spacer, to align navigation to the right -->\n      <div class=\"mdl-layout-spacer\"></div>\n      <!-- Navigation. We hide it in small screens. -->\n      <nav class=\"mdl-navigation mdl-layout--large-screen-only\">\n        <a *ngIf=\"!authService.loggedIn()\" class=\"mdl-navigation__link\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\" [routerLink]=\"['/register']\">Sign Up</a>\n        <a *ngIf=\"!authService.loggedIn()\" class=\"mdl-navigation__link\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\" [routerLink]=\"['/login']\">Login</a>\n        <a *ngIf=\"authService.loggedIn()\" class=\"mdl-navigation__link\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\" [routerLink]=\"['/profile']\">Profile</a>\n        <a *ngIf=\"authService.loggedIn()\" class=\"mdl-navigation__link\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\" [routerLink]=\"['/dashboard']\">Dashboard</a>\n        <a *ngIf=\"authService.loggedIn()\" class=\"mdl-navigation__link\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\" href=\"#\" (click)='onLogoutClick()'>Logout</a>\n\n      </nav>\n    </div>\n  </header>\n</div>\n"
 
 /***/ }),
 
 /***/ 725:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n\n\t<div class=\"mdl-layout mdl-js-layout\">\n\n\t\t<div class=\"mdl-card mdl-shadow--6dp\">\n\t  \t<div class=\"mdl-card__supporting-text\">\n\t\t\t\t<form  (submit)=\"onRegisterSubmit()\">\n\t\t\t\t<flash-messages></flash-messages>\n\t\t\t\t\t<div class=\"mdl-textfield mdl-js-textfield\">\n\t\t\t\t\t\t<input placeholder=\"Name\" class=\"mdl-textfield__input\" type=\"text\" [(ngModel)]= \"name\" name=\"name\" />\n\t\t\t\t\t\t<!-- <label class=\"mdl-textfield__label\" for=\"username\">Name</label> -->\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class=\"mdl-textfield mdl-js-textfield\">\n\t\t\t\t\t\t<input placeholder=\"Username\" class=\"mdl-textfield__input\" type=\"text\" [(ngModel)]= \"username\" name=\"username\"/>\n\t\t\t\t\t\t<!-- <label class=\"mdl-textfield__label\" for=\"username\">Username</label> -->\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class=\"mdl-textfield mdl-js-textfield\">\n\t\t\t\t\t\t<input placeholder=\"Email\" autocomplete=\"off\" class=\"mdl-textfield__input\" type=\"text\" [(ngModel)]= \"email\" name=\"email\" />\n\t\t\t\t\t\t<!-- <label class=\"mdl-textfield__label\" for=\"useremail\">Email</label> -->\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class=\"mdl-textfield mdl-js-textfield\">\n\t\t\t\t\t\t<input placeholder=\"Password\" autocomplete=\"off\" class=\"mdl-textfield__input\" type=\"password\" [(ngModel)]= \"password\" name=\"password\"/>\n\t\t\t\t\t\t<!-- <label class=\"mdl-textfield__label\" for=\"userpass\">Password</label> -->\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"mdl-card__actions \">\n\t\t\t\t<button type=\"submit\" value=\"Submit\" class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect signUp\">Sign Up</button>\n\t\t\t</div>\n\t\t\t\t</form>\n\t\t\t</div>\n\n\t\t</div>\n\n</div>\n\n</div>\n"
+module.exports = "<div  class=\"profileRow\" *ngIf=\"user\">\n  <div class=\"mdl-grid\">\n    <div class=\"mdl-cell mdl-cell--2-col\">\n      <img class=\"profilePic\" src=\"http://s3.amazonaws.com/37assets/svn/765-default-avatar.png\">\n    </div>\n    <div class=\"mdl-cell mdl-cell--6-col profileColumnn\">\n    <p class=\"userName\"> {{user.name.toUpperCase()}} </p>\n      <!-- <ul>\n        <li>Username: {{user.username}}</li>\n        <li>Email: {{user.email}}</li>\n      </ul> -->\n  </div>\n\n  </div>\n  <hr>\n  <h3 class=\"contentDesc\">My Courses</h3>\n  <div class=\"mdl-grid\">\n      <div class=\"mdl-cell mdl-cell--3-col\" *ngFor=\"let course of course\" (click)=\"onSelect(course)\">\n        <div class=\"demo-card-square mdl-card mdl-shadow--2dp\">\n          <img class=\"courseImages\" src=\"../../assets/javascript@2x.png\">\n          <div class=\"mdl-card__title mdl-card--expand\">\n            <h2 class=\"mdl-card__title-text\">{{course.title}}</h2>\n          </div>\n\n          <div class=\"mdl-card__supporting-text\">\n            {{course.description}}\n          </div>\n          <div class=\"mdl-card__actions mdl-card--border\">\n            <a class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect\" (click)=\"onSubmit(course)\">\n              Continue Course\n            </a>\n          </div>\n       </div>\n     </div>\n </div>\n\n</div>\n"
 
 /***/ }),
 
 /***/ 726:
 /***/ (function(module, exports) {
 
+module.exports = "<div class=\"row\">\n\n\t<div class=\"mdl-layout mdl-js-layout\">\n\n\t\t<div class=\"mdl-card mdl-shadow--6dp\">\n\t  \t<div class=\"mdl-card__supporting-text\">\n\t\t\t\t<form  (submit)=\"onRegisterSubmit()\">\n\t\t\t\t<flash-messages></flash-messages>\n\t\t\t\t\t<div class=\"mdl-textfield mdl-js-textfield\">\n\t\t\t\t\t\t<input placeholder=\"Name\" class=\"mdl-textfield__input\" type=\"text\" [(ngModel)]= \"name\" name=\"name\" />\n\t\t\t\t\t\t<!-- <label class=\"mdl-textfield__label\" for=\"username\">Name</label> -->\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class=\"mdl-textfield mdl-js-textfield\">\n\t\t\t\t\t\t<input placeholder=\"Username\" class=\"mdl-textfield__input\" type=\"text\" [(ngModel)]= \"username\" name=\"username\"/>\n\t\t\t\t\t\t<!-- <label class=\"mdl-textfield__label\" for=\"username\">Username</label> -->\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class=\"mdl-textfield mdl-js-textfield\">\n\t\t\t\t\t\t<input placeholder=\"Email\" autocomplete=\"off\" class=\"mdl-textfield__input\" type=\"text\" [(ngModel)]= \"email\" name=\"email\" />\n\t\t\t\t\t\t<!-- <label class=\"mdl-textfield__label\" for=\"useremail\">Email</label> -->\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class=\"mdl-textfield mdl-js-textfield\">\n\t\t\t\t\t\t<input placeholder=\"Password\" autocomplete=\"off\" class=\"mdl-textfield__input\" type=\"password\" [(ngModel)]= \"password\" name=\"password\"/>\n\t\t\t\t\t\t<!-- <label class=\"mdl-textfield__label\" for=\"userpass\">Password</label> -->\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"mdl-card__actions \">\n\t\t\t\t<button type=\"submit\" value=\"Submit\" class=\"mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect signUp\">Sign Up</button>\n\t\t\t</div>\n\t\t\t\t</form>\n\t\t\t</div>\n\n\t\t</div>\n\n</div>\n\n</div>\n"
+
+/***/ }),
+
+/***/ 727:
+/***/ (function(module, exports) {
+
 module.exports = "<div *ngIf=\"course\">\n      <div id=\"sixt\" class= \"row\">\n        <p class=\"rowHeader\"> {{course.title.toUpperCase()}} </p>\n        <p class=\"rowWriting\"> {{course.description}} </p>\n        <button type=\"submit\" value=\"Submit\"\n        class=\"mdl-button mdl-button--colored homeSignUp\" (click)=\"onSubmit(course)\">{{status}}</button>\n      </div>\n  <div *ngIf=\"course\">\n      <div id=\"fifth\" >\n        <h1 class=\"lowerHeader\"> About being {{course.title}} </h1>\n        <p class=\"syllabusDesc\"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,\n           when an unknown printer took a galley of type and scrambled it to make a type specimen book.\n           It has survived not only five centuries, but also the leap into electronic typesetting,\n           remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset\n           sheets containing Lorem Ipsum passages, and more recently with desktop publishing software l\n           ike Aldus PageMaker including versions of Lorem Ipsum. </p>\n      </div>\n  </div>\n  <div id=\"syllabusRow\" class=\"row\" *ngIf=\"syllabus\">\n      <p class=\"pageHeader\"> Syllabus </p>\n              <div class=\"demo-card-wide mdl-card mdl-shadow--2dp\" *ngFor=\"let content of syllabus\" >\n                <div *ngFor=\"let entry of content | keys\">\n                  <div class=\"mdl-card__title\">\n                    <h2 class=\"mdl-card__title-text\"  >{{entry.key}}</h2>\n                  </div>\n                  <div class=\"mdl-card__supporting-text\">\n                    {{entry.value}}\n                  </div>\n          </div>\n  </div>\n</div>\n<hr style=\"margin: 20px 15px\">\n<div id=\"fourth\" class=\"row\">\n\t\t<div class=\"mdl-cell mdl-cell--8-col getStarted\">\n\t\t\t<div class=\"mdl-grid getStartedWriting\">\n\t\t\t\t<div class=\"mdl-cell mdl-cell--6-col\">\n\t\t\t\t\t<p class=\"pContent\">Get started with your coding career   <i class=\"material-icons\">thumb_up</i></p>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"mdl-cell mdl-cell--6-col\">\n\t\t\t\t\t<button class=\"mdl-button mdl-js-button mdl-button--raised pButton\" (click)=\"onSubmit(course)\">{{status}}</button>\n\t\t\t\t</div>\n\t\t </div>\n\t\t</div>\n\n\n</div>\n"
 
 /***/ }),
 
-/***/ 747:
+/***/ 748:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(401);
+module.exports = __webpack_require__(402);
 
 
 /***/ })
 
-},[747]);
+},[748]);
 //# sourceMappingURL=main.bundle.map
